@@ -1,0 +1,105 @@
+import type { ClientSummary, Profile } from "../types";
+
+export const profiles = {
+  individual: {
+    id: "perfil-rafael",
+    name: "Rafael Mendonça",
+    email: "rafael.mendonca@email.com",
+    phone: "(85) 98812-4471",
+    initials: "RM",
+    accountType: "individual" as const,
+  },
+  time: {
+    id: "perfil-capitao",
+    name: "Fernando Braga",
+    email: "capitao.amigosfc@email.com",
+    phone: "(85) 99145-2280",
+    initials: "FB",
+    accountType: "time" as const,
+  },
+  owner: {
+    id: "perfil-proprietaria",
+    name: "Marina Costa",
+    email: "marina@areninhacentral.com.br",
+    phone: "(85) 99630-1187",
+    initials: "MC",
+    accountType: "time" as const,
+  },
+};
+
+export const currentProfile = profiles.individual as Profile;
+
+export const clients: ClientSummary[] = [
+  {
+    id: "cli-1",
+    name: "Rafael Mendonça",
+    phone: "(85) 98812-4471",
+    reservations: 18,
+    lastBooking: "Há 2 dias",
+    totalSpent: 2520,
+    hue: 137,
+  },
+  {
+    id: "cli-2",
+    name: "Camila Torres",
+    phone: "(85) 99270-3312",
+    reservations: 12,
+    lastBooking: "Ontem",
+    totalSpent: 1680,
+    hue: 150,
+  },
+  {
+    id: "cli-3",
+    name: "Fernando Braga",
+    phone: "(85) 99145-2280",
+    reservations: 27,
+    lastBooking: "Hoje",
+    totalSpent: 3780,
+    hue: 128,
+  },
+  {
+    id: "cli-4",
+    name: "Juliana Prado",
+    phone: "(85) 98155-9044",
+    reservations: 9,
+    lastBooking: "Há 5 dias",
+    totalSpent: 1170,
+    hue: 160,
+  },
+  {
+    id: "cli-5",
+    name: "Diego Nascimento",
+    phone: "(85) 98644-7719",
+    reservations: 15,
+    lastBooking: "Há 1 dia",
+    totalSpent: 2100,
+    hue: 145,
+  },
+  {
+    id: "cli-6",
+    name: "Amanda Ribeiro",
+    phone: "(85) 99501-6633",
+    reservations: 7,
+    lastBooking: "Há 9 dias",
+    totalSpent: 980,
+    hue: 170,
+  },
+  {
+    id: "cli-7",
+    name: "Bruno Carvalho",
+    phone: "(85) 98390-1156",
+    reservations: 11,
+    lastBooking: "Há 3 dias",
+    totalSpent: 1540,
+    hue: 132,
+  },
+  {
+    id: "cli-8",
+    name: "Patrícia Gomes",
+    phone: "(85) 99777-4821",
+    reservations: 5,
+    lastBooking: "Há 12 dias",
+    totalSpent: 700,
+    hue: 155,
+  },
+];
