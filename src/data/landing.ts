@@ -19,15 +19,29 @@ export const features = [
     icon: UsersRound,
     index: "03",
     title: "Formação de times",
-    description:
-      "Organize os participantes e facilite a formação dos times antes da partida.",
+    description: "Organize os participantes e facilite a formação dos times antes da partida.",
   },
 ];
 
 export const steps = [
-  { number: "01", icon: CircleUserRound, title: "Cadastrar", description: "Crie seu perfil para entrar em campo." },
-  { number: "02", icon: CalendarDays, title: "Escolher horário", description: "Veja as opções livres na areninha." },
-  { number: "03", icon: UsersRound, title: "Montar time", description: "Reúna a galera e organize os lados." },
+  {
+    number: "01",
+    icon: CircleUserRound,
+    title: "Cadastrar",
+    description: "Crie seu perfil para entrar em campo.",
+  },
+  {
+    number: "02",
+    icon: CalendarDays,
+    title: "Escolher horário",
+    description: "Veja as opções livres na areninha.",
+  },
+  {
+    number: "03",
+    icon: UsersRound,
+    title: "Montar time",
+    description: "Reúna a galera e organize os lados.",
+  },
   { number: "04", icon: Goal, title: "Jogar", description: "Confirme os detalhes e partiu jogo." },
 ];
 

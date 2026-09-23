@@ -11,9 +11,16 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Meu Campo — Organize seu jogo na areninha" },
-      { name: "description", content: "Encontre horários, organize sua partida e monte seu time em areninhas de forma simples." },
+      {
+        name: "description",
+        content:
+          "Encontre horários, organize sua partida e monte seu time em areninhas de forma simples.",
+      },
       { property: "og:title", content: "Meu Campo — Organize seu jogo na areninha" },
-      { property: "og:description", content: "Escolha o horário, monte seu time e coloque sua partida em campo." },
+      {
+        property: "og:description",
+        content: "Escolha o horário, monte seu time e coloque sua partida em campo.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
