@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Button } from "primereact/button";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
+import logo from "../../assets/logo-meu-campo.png";
 
 const links = [
   { label: "Início", href: "#inicio" },
@@ -28,10 +29,7 @@ export function Navbar() {
     <header className="site-header">
       <nav className="nav-shell" aria-label="Navegação principal">
         <a className="wordmark" href="#inicio" aria-label="Meu Campo, ir ao início">
-          <span className="wordmark-mark" aria-hidden="true">
-            <span />
-          </span>
-          MEU CAMPO
+          <img src={logo} alt="Meu Campo" className="wordmark-logo" />
         </a>
         <div className="nav-links" aria-label="Seções da página">
           {links.map((link) =>

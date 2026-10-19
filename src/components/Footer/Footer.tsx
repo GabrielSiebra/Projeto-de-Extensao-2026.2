@@ -1,15 +1,13 @@
 import { ArrowUpRight } from "lucide-react";
+import logo from "../../assets/logo-meu-campo.png";
 
 export function Footer() {
   return (
     <footer className="footer" id="sobre">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <a className="wordmark" href="#inicio">
-            <span className="wordmark-mark" aria-hidden="true">
-              <span />
-            </span>
-            ARENA
+          <a className="wordmark" href="#inicio" aria-label="Meu Campo, ir ao início">
+            <img src={logo} alt="Meu Campo" className="wordmark-logo" />
           </a>
           <p>Organize sua partida. Escolha o horário. Monte seu time. Jogue.</p>
         </div>

@@ -4,6 +4,7 @@ import { Menu, X, Bell, LogOut, ChevronRight } from "lucide-react";
 import { useApp } from "../../context/app";
 import type { AppPath } from "../../lib/paths";
 import { Avatar, initialsOf } from "./primitives";
+import logo from "../../assets/logo-meu-campo.png";
 
 export interface NavItem {
   label: string;
@@ -15,10 +16,7 @@ export interface NavItem {
 function Wordmark({ to }: { to: AppPath }) {
   return (
     <Link to={to} className="wordmark" aria-label="Meu Campo, ir ao início">
-      <span className="wordmark-mark" aria-hidden="true">
-        <span />
-      </span>
-      MEU CAMPO
+      <img src={logo} alt="Meu Campo" className="wordmark-logo" />
     </Link>
   );
 }
@@ -179,11 +177,8 @@ export function PublicHeader({ active }: { active?: string }) {
   return (
     <header className="public-header">
       <nav className="nav-shell" aria-label="Navegação principal">
-        <Link to="/" className="wordmark">
-          <span className="wordmark-mark" aria-hidden="true">
-            <span />
-          </span>
-          MEU CAMPO
+        <Link to="/" className="wordmark" aria-label="Meu Campo, ir ao início">
+          <img src={logo} alt="Meu Campo" className="wordmark-logo" />
         </Link>
         <div className="nav-links">
           <Link to="/buscar" className={active === "buscar" ? "active" : ""}>
